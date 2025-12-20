@@ -13,9 +13,9 @@ KahitSan Solutions Corp is building a network of productivity tools and spaces, 
 - Diversion Road: Closed
 
 **Software Solutions:**
-We develop technology that empowers organizations, businesses, and communities. Our focus is on creating systems that simplify operations, enhance collaboration, and deliver reliable digital solutions for real-world needs.
+We provide consultation and technical guidance to help organizations, businesses, and communities leverage modern technology. Our focus is on advising on systems that simplify operations, enhance collaboration, and deliver reliable digital solutions for real-world needs.
 
-We build modular, scalable applications using modern web technologies. Our projects focus on flexibility, configurability, and developer experience.
+We offer expertise in modern web technologies, with emphasis on modular architecture, scalability, and developer experience.
 
 ---
 
