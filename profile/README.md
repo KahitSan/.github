@@ -23,7 +23,7 @@ We offer expertise in modern web technologies, with emphasis on modular architec
 
 ### Prerequisites
 - Node.js 20+ (LTS recommended)
-- Bun 1.2.22+ (for PillarBridgeAPI)
+- Bun 1.2.22+ (for pillar-api)
 - Git with SSH access
 
 ### Contributing

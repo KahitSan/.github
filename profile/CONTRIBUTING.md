@@ -96,16 +96,16 @@ Expect code review before merge. Be open to feedback and iterate on your changes
 
 **Note:** You'll only see and be able to contribute to repositories you have access to. Focus on the projects visible to you.
 
-#### PillarBlocks
+#### pillar
 Frontend framework monorepo. Read the README for:
 - Multi-app architecture and switching mechanism
-- Git submodule workflow for PillarUI components
+- Git submodule workflow for pillar-ui components
 - Deployment configuration
 - Routing and auth patterns
 
 **Prerequisites:** Node.js 20+, npm
 
-#### PillarBridgeAPI
+#### pillar-api
 Backend API server. Read the README for:
 - Supabase setup and local development
 - API endpoint documentation
@@ -114,7 +114,7 @@ Backend API server. Read the README for:
 
 **Prerequisites:** Bun 1.2.22+, Supabase project
 
-#### PillarUI
+#### pillar-ui
 Shared component library (git submodule). Read the README for:
 - Component structure (base vs composite)
 - Development workflow
@@ -122,7 +122,7 @@ Shared component library (git submodule). Read the README for:
 
 **Prerequisites:** Node.js 20+, npm
 
-#### PillarStorybook
+#### pillar-storybook
 Component documentation. Read the README for:
 - Storybook setup
 - Component story patterns
@@ -137,7 +137,7 @@ Component documentation. Read the README for:
 ### Testing
 
 Write tests for your changes when applicable. Testing requirements vary by repository:
-- **PillarBridgeAPI:** 80%+ coverage required (Bun:test)
+- **pillar-api:** 80%+ coverage required (Bun:test)
 - **Other repos:** Follow existing test patterns or add tests for critical functionality
 
 Run tests before submitting your PR:
@@ -195,7 +195,7 @@ Most projects require:
 - **Node.js** 20+ (LTS recommended)
 - **npm** or compatible package manager
 - **Git** with SSH access
-- **Bun** 1.2.22+ (for PillarBridgeAPI)
+- **Bun** 1.2.22+ (for pillar-api)
 
 ### Repository Access
 
