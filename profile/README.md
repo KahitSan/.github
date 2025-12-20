@@ -30,7 +30,7 @@ We offer expertise in modern web technologies, with emphasis on modular architec
 
 We welcome contributions to our projects. Each repository has its own setup instructions and contribution guidelines.
 
-**See our [Contributing Guide](../CONTRIBUTING.md) for:**
+**See our [Contributing Guide](CONTRIBUTING.md) for:**
 - General workflow and commit conventions
 - How to set up your development environment
 - Repository-specific guidelines
