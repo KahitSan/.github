@@ -44,11 +44,11 @@ We welcome contributions to our projects. Each repository has its own setup inst
 
 We're committed to modern, performant tooling:
 
-**Frontend:** Solid.js, Vite, TypeScript, Tailwind CSS
-**Backend:** Hono, Bun, Cloudflare Workers
-**Database:** PostgreSQL (via Supabase)
-**Infrastructure:** Docker, GitHub Actions
-**Testing:** Bun:test, Vitest, Playwright
+- **Frontend:** Solid.js, Vite, TypeScript, Tailwind CSS
+- **Backend:** Hono, Bun, Cloudflare Workers
+- **Database:** PostgreSQL (via Supabase)
+- **Infrastructure:** Docker, GitHub Actions
+- **Testing:** Bun:test, Vitest, Playwright
 
 ---
 
