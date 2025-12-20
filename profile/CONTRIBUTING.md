@@ -6,6 +6,25 @@ Thank you for your interest in contributing to KahitSan Solutions. This guide ou
 
 ## General Workflow
 
+### 0. Clone via SSH (prerequisite)
+
+Configure SSH on your local machine before touching any KahitSan repo. We rely on SSH because several repos pull submodules (e.g., `git clone --recursive` for shared packages), and SSH avoids token prompts and flaky recursive fetches.
+
+1) Generate a key if you don't have one:
+```bash
+ssh-keygen -t ed25519 -C "your.email@example.com"
+```
+2) Add it to your SSH agent and GitHub account, then verify:
+```bash
+ssh -T git@github.com
+```
+3) Clone using SSH:
+```bash
+git clone git@github.com:KahitSan/<repo>.git
+# For repos with submodules (pillar-ui, etc.)
+git clone --recursive git@github.com:KahitSan/<repo>.git
+```
+
 ### 1. Fork and Branch
 
 Always work from the latest default branch (usually `main` or `master`). Create feature branches using descriptive names:
@@ -194,7 +213,7 @@ Before working on a major feature:
 Most projects require:
 - **Node.js** 20+ (LTS recommended)
 - **npm** or compatible package manager
-- **Git** with SSH access
+- **Git** with SSH access (SSH key configured locally and added to GitHub)
 - **Bun** 1.2.22+ (for pillar-api)
 
 ### Repository Access
