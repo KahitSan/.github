@@ -6,10 +6,45 @@ Thank you for your interest in contributing to KahitSan Solutions. This guide ou
 
 ## General Workflow
 
+### 0. Clone via SSH (prerequisite)
+
+If you've been granted access to contribute to a private KahitSan repository (i.e., you're a direct contributor but not necessarily an org member), you must use SSH for all Git operations—cloning, pulling, pushing, and especially when working with submodules. Public contributors (those using forks of public repos) can use HTTPS if they prefer, but SSH is strongly recommended when dealing with submodules. Configure SSH on your local machine before interacting with any KahitSan repo. We rely on SSH because several repos use submodules (e.g., `git clone --recursive` for shared packages), and SSH avoids authentication prompts and unreliable recursive fetches.```
+
+1) Generate a key if you don't have one:
+```bash
+ssh-keygen -t ed25519 -C "your.email@example.com"
+```
+2) Add it to your SSH agent and GitHub account, then verify:
+```bash
+ssh -T git@github.com
+```
+3) Clone using SSH (recommended for private contributors and anyone working with submodules):
+```bash
+git clone git@github.com:KahitSan/<repo>.git
+# For repos with submodules (pillar-ui, etc.)
+git clone --recursive git@github.com:KahitSan/<repo>.git
+```
+
+For public contributors working from a fork (SSH or HTTPS):
+```bash
+git clone git@github.com:<your-username>/<repo>.git
+git remote add upstream git@github.com:KahitSan/<repo>.git
+# For forks with submodules
+git submodule update --init --recursive
+```
+
 ### 1. Fork and Branch
 
-Always work from the latest default branch (usually `main` or `master`). Create feature branches using descriptive names:
+**Default (public contributors without direct write access):** Fork, clone your fork (SSH recommended for submodules; HTTPS allowed), add `upstream`, and branch from the latest upstream default branch.
+```bash
+git remote add upstream git@github.com:KahitSan/<repo>.git
+git fetch upstream
+git checkout upstream/main
+git pull upstream main
+git checkout -b feat/your-feature-name
+```
 
+**Internal/private contributors with repo access:** Branch directly in the KahitSan repo.
 ```bash
 git checkout main
 git pull origin main
@@ -194,7 +229,7 @@ Before working on a major feature:
 Most projects require:
 - **Node.js** 20+ (LTS recommended)
 - **npm** or compatible package manager
-- **Git** with SSH access
+- **Git** with SSH access (SSH key configured locally and added to GitHub)
 - **Bun** 1.2.22+ (for pillar-api)
 
 ### Repository Access
