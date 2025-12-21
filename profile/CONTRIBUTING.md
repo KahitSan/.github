@@ -8,7 +8,7 @@ Thank you for your interest in contributing to KahitSan Solutions. This guide ou
 
 ### 0. Clone via SSH (prerequisite)
 
-If you're a private contributor (granted access but not an org member), you must use SSH for cloning and pulling—especially on repos with submodules. Public contributors (using forks) can use HTTPS if they prefer, but SSH is recommended when dealing with submodules. Configure SSH on your local machine before touching any KahitSan repo. We rely on SSH because several repos pull submodules (e.g., `git clone --recursive` for shared packages), and SSH avoids token prompts and flaky recursive fetches.
+If you've been granted access to contribute to a private KahitSan repository (i.e., you're a direct contributor but not necessarily an org member), you must use SSH for all Git operations—cloning, pulling, pushing, and especially when working with submodules. Public contributors (those using forks of public repos) can use HTTPS if they prefer, but SSH is strongly recommended when dealing with submodules. Configure SSH on your local machine before interacting with any KahitSan repo. We rely on SSH because several repos use submodules (e.g., `git clone --recursive` for shared packages), and SSH avoids authentication prompts and unreliable recursive fetches.```
 
 1) Generate a key if you don't have one:
 ```bash
