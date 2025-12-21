@@ -8,7 +8,7 @@ Thank you for your interest in contributing to KahitSan Solutions. This guide ou
 
 ### 0. Clone via SSH (prerequisite)
 
-Configure SSH on your local machine before touching any KahitSan repo. We rely on SSH because several repos pull submodules (e.g., `git clone --recursive` for shared packages), and SSH avoids token prompts and flaky recursive fetches.
+If you're a private contributor (granted access but not an org member), you must use SSH for cloning and pulling—especially on repos with submodules. Public contributors (using forks) can use HTTPS if they prefer, but SSH is recommended when dealing with submodules. Configure SSH on your local machine before touching any KahitSan repo. We rely on SSH because several repos pull submodules (e.g., `git clone --recursive` for shared packages), and SSH avoids token prompts and flaky recursive fetches.
 
 1) Generate a key if you don't have one:
 ```bash
@@ -18,17 +18,33 @@ ssh-keygen -t ed25519 -C "your.email@example.com"
 ```bash
 ssh -T git@github.com
 ```
-3) Clone using SSH:
+3) Clone using SSH (recommended for private contributors and anyone working with submodules):
 ```bash
 git clone git@github.com:KahitSan/<repo>.git
 # For repos with submodules (pillar-ui, etc.)
 git clone --recursive git@github.com:KahitSan/<repo>.git
 ```
 
+For public contributors working from a fork (SSH or HTTPS):
+```bash
+git clone git@github.com:<your-username>/<repo>.git
+git remote add upstream git@github.com:KahitSan/<repo>.git
+# For forks with submodules
+git submodule update --init --recursive
+```
+
 ### 1. Fork and Branch
 
-Always work from the latest default branch (usually `main` or `master`). Create feature branches using descriptive names:
+**Default (public contributors without direct write access):** Fork, clone your fork (SSH recommended for submodules; HTTPS allowed), add `upstream`, and branch from the latest upstream default branch.
+```bash
+git remote add upstream git@github.com:KahitSan/<repo>.git
+git fetch upstream
+git checkout upstream/main
+git pull upstream main
+git checkout -b feat/your-feature-name
+```
 
+**Internal/private contributors with repo access:** Branch directly in the KahitSan repo.
 ```bash
 git checkout main
 git pull origin main
