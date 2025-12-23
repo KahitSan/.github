@@ -1,12 +1,4 @@
-# KahitSan Solutions Corp
-
-**Productivity starts anywhere.** Your comfy study tambayan.
-
----
-
-## Overview
-
-KahitSan Solutions Corp is building a network of productivity tools and spaces, from coworking hubs in Naga City to modern software solutions that empower developers and connect communities.
+We are building a network of productivity tools and spaces, from coworking hubs in Naga City to modern software solutions that empower developers and connect communities.
 
 **Coworking Spaces:**
 
