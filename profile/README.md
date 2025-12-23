@@ -9,8 +9,11 @@
 KahitSan Solutions Corp is building a network of productivity tools and spaces, from coworking hubs in Naga City to modern software solutions that empower developers and connect communities.
 
 **Coworking Spaces:**
-- Panganiban Drive: ![Open](https://img.shields.io/badge/Open-brightgreen)
-- Diversion Road: ![Closed](https://img.shields.io/badge/Closed-red)
+
+| Space | Status |
+|-------|--------|
+| Panganiban Drive | ![Open](https://img.shields.io/badge/Open-brightgreen) |
+| Diversion Road | ![Closed](https://img.shields.io/badge/Closed-red) |
 
 **Software Solutions:**
 We provide consultation and technical guidance to help organizations, businesses, and communities leverage modern technology. Our focus is on advising on systems that simplify operations, enhance collaboration, and deliver reliable digital solutions for real-world needs.
