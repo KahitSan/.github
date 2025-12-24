@@ -1,4 +1,6 @@
+<p align="center">
 We are building a network of productivity tools and spaces, from coworking hubs in Naga City to modern software solutions that empower developers and connect communities.
+</p>
 
 **Coworking Spaces:**
 
